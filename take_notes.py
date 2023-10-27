@@ -9,7 +9,7 @@ def takeNote():
 		words = query.split(" ")
 
 		for items in words:
-			if items (not in returnKeys) and (items != "none"):
+			if (items not in returnKeys) and (items != "none"):
 				if os.path.isfile("./notes.txt"):
 					with open("./notes.txt", "a") as file:
 						notes = file.write(items + "\n")
