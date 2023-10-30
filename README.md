@@ -1,8 +1,8 @@
 # bulba-home-assistant
 A home assistant using the #1 pokemon in PokedeX as a frontman.
 
-------------------------------------------
-## ntfy configuration guide / server setup
+
+### ntfy configuration guide / server setup
 ------------------------------------------
 
 1.Pull the docker image. 
