@@ -1,5 +1,6 @@
 # bulba-home-assistant
 A home assistant using the #1 pokemon in PokedeX as a frontman.
+-------------------------------------------
 
 
 ### ntfy configuration guide / server setup
@@ -35,6 +36,6 @@ OPTIONAL: enable static local IPs for the server and your connected devices.
 # References
 ---------------------------
 
-(https://github.com/Uberi/speech_recognition)
-(https://github.com/binwiederhier/ntfy)
+https://github.com/Uberi/speech_recognition
+https://github.com/binwiederhier/ntfy
 
