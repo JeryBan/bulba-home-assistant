@@ -1,0 +1,192 @@
+body {
+    background-image: url('../images/body_bg.jpg');
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-attachment: fixed;
+  }
+
+
+/*--------------- Menu / Navbar --------------*/
+
+nav ul {
+    margin-left: -5%;
+}
+
+nav ul li:nth-last-of-type(2) {
+    margin-bottom: 160%;
+    border-bottom: 1px solid rgb(161, 158, 158, 0.5);
+    
+}
+
+nav ul li {
+    list-style-type: none;
+    padding-bottom: 1.5rem;
+    
+}
+
+.menu-button {
+    cursor: pointer;
+  }
+  
+.menu-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #c0b6b6;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: none; 
+    background-color: #1f5343;
+    transform: translate(0, -50%);
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    height: 55vh;
+    width: 10vw;
+    margin-top: 28vh;
+    opacity: 90%;
+    
+}
+   
+.menu-text {
+    color: rgb(185, 193, 199);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+/* ------------------- Slideshow -------------------------*/
+
+.slideshow-container {
+    display: flexbox;
+    position: fixed right;
+    width: 30%;
+     
+}
+
+.slides {
+    animation: fade 2s linear;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slide-img {
+    border: 3px solid #000;
+    float: right;
+    margin-right: 10px;
+
+}
+
+/* -------------- Feed --------------------- */
+
+.feed-container {
+    width: 25vw;
+    height: 50vh;
+    background-color: rgb(68, 65, 65, 0.6);
+    margin-left: 74vw;
+    margin-top: 30vh;
+    border-style: double;
+    overflow: hidden;
+}
+
+.feed-container > ul {
+    list-style: none;
+    list-style-type: none;
+    animation: scroll 30s linear infinite;}
+.feed-container ul>li {
+    padding-bottom: 0.7rem; 
+    border-bottom: 1px solid #b9b2b2;}
+.feed-container ul li>p , h3{
+    font-family: 'Montserrat', sans-serif;
+    color: antiquewhite;}
+
+    @keyframes scroll {
+        0% {
+          transform: translateY(-100%);
+        }
+        10% {
+          transform: translateY((-100%));
+        }
+        20% {
+          transform: translateY((-100%));
+        }
+        25% {
+          transform: translateY((-100%));
+        }
+        40% {
+          transform: translateY((-100%));
+        }
+        50% {
+          transform: translateY((-100%));
+        }
+        60% {
+          transform: translateY((-100%));
+        }
+        70% {
+          transform: translateY((-100%));
+        }
+        80% {
+          transform: translateY((-100%));
+        }
+        90% {
+          transform: translateY((0));
+        }
+        100% {
+          transform: translateY((0));
+        }
+      }
+      
+      
+
+/* ----------- Bulba Jokes ------------------*/
+
+.jokes-container {
+    width: 40%;
+    height: 10%;
+    background-color: rgb(129, 104, 73, 0.9);
+    /* opacity: 90%; */
+    margin-left: 2%;
+    /* margin-top: 35%; */
+    position: fixed;
+    border-style: ridge;  
+       
+    
+}
+
+
+.jokes-text {
+    font-family: 'Montserrat', sans-serif;
+    color: antiquewhite;
+    font-weight: 400;
+    padding-left: 10%;
+    max-height: 70%;
+    overflow: hidden;
+    
+}
+
+.bulba-icon {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -8%;
+    margin-left: -5%;
+    
+}
+
+
+
+
+
+

@@ -1,7 +1,6 @@
 import requests
 import mimetypes
 
-# resp = requests.get("http://127.0.0.1:80/json", stream=True)
 
 def pushMessage (message):
     requests.post("http://192.168.2.9/bulba-home-assistant",
