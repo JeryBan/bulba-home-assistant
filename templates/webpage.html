@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/webpage.css">
 </head>
@@ -20,6 +20,7 @@
             <div class="menu-icon"></div>
             <div class="menu-icon"></div>
         </div>
+
         <div class="menu" id="menu">
             <ul class="">
                 <li>
@@ -42,67 +43,79 @@
     <!---------------------------------------------------------------------->
 
     <main>
+
         <!-------------------- Slide show------------ -->
-        <div class="slideshow-container">
+        <div class="feed-container">
             <div class="slides fade">
-                <img class="slide-img" src="../assets/images/kimetso.jpg" alt="kimetso" width="25%" height="auto">
+                <img class="slide-img" src="../assets/images/kimetso.jpg" alt="kimetso" width="100%" height="auto">
             </div>    
             <div class="slides fade">
-                <img class="slide-img" src="../assets/images/abyss.jpg" alt="abyss" width="25%" height="auto">
+                <img class="slide-img" src="../assets/images/abyss.jpg" alt="abyss" width="100%" height="auto">
             </div>
             <div class="slides fade">
-                <img class="slide-img" src="../assets/images/one_piece.jpeg" alt="abyss" width="25%" height="30%">
+                <img class="slide-img" src="../assets/images/one_piece.jpeg" alt="onepiece" width="100%" height="270vh">
+            </div>
+            <div class="slides fade">
+                <img class="slide-img" src="../assets/images/stone.jpg" alt="dr stone" width="100%" height="auto">
+            </div><br>     
+            <!-------------------- Feed --------------------->
+            <div class="feed">
+                <ul>
+                    <li>
+                        <h3>Ttitle 1</h3>
+                        <p>Qfsdnfdklsjfkd</p>
+                    </li>
+                    <li>
+                        <h3>Title 2</h3>
+                        <p>Tkjkldslore Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quaerat dolore molestias reiciendis magni molestiae corporis rem? Ut, non facilis quam, deleniti exercitationem accusantium, fugiat nobis ducimus nulla magnam vel?nckldscn</p>
+                    </li>
+                    <li>
+                        <h3>Title 3</h3>
+                        <p>kjaslkansklcnskanc</p>
+                    </li>
+                    <li>
+                        <h3>Title 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nam officiis, similique illum tempora esse omnis repudiandae expedita at cumque. Suscipit esse ut voluptatibus, expedita fuga odit neque impedit dicta!</p>
+                    </li>
+                    <li>
+                        <h3>Title 5</h3>
+                        <p>Tkjkldsnckldscn</p>
+                    </li>
+                    <li>
+                        <h3>item 6</h3>
+                        <p>Tkjkldsnck Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum a quidem soluta dignissimos expedita? Minima accusantium vel, ea quae tempora praesentium tempore, enim delectus quo dolorum magnam culpa tenetur error.ldscn</p>
+                    </li>
+                </ul>
             </div>
         </div><br>
 
-        <!-------------------- Feed --------------------->
-        <div class="feed-container">
-            <ul>
-                <li>
-                    <h3>Ttitle 1</h3>
-                    <p>Qfsdnfdklsjfkd</p>
-                </li>
-                <li>
-                    <h3>Title 2</h3>
-                    <p>Tkjkldslore Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quaerat dolore molestias reiciendis magni molestiae corporis rem? Ut, non facilis quam, deleniti exercitationem accusantium, fugiat nobis ducimus nulla magnam vel?nckldscn</p>
-                </li>
-                <li>
-                    <h3>Title 3</h3>
-                    <p>kjaslkansklcnskanc</p>
-                </li>
-                <li>
-                    <h3>Title 4</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nam officiis, similique illum tempora esse omnis repudiandae expedita at cumque. Suscipit esse ut voluptatibus, expedita fuga odit neque impedit dicta!</p>
-                </li>
-                <li>
-                    <h3>Title 5</h3>
-                    <p>Tkjkldsnckldscn</p>
-                </li>
-                <li>
-                    <h3>item 6</h3>
-                    <p>Tkjkldsnck Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum a quidem soluta dignissimos expedita? Minima accusantium vel, ea quae tempora praesentium tempore, enim delectus quo dolorum magnam culpa tenetur error.ldscn</p>
-                </li>
-            </ul>
+        <!------------------ Music Player -------------->
 
-        </div>
+        <div class="music-container">
+            <img class="music-icon" id="music-button" src="../assets/images/bpm.webp" alt="">
+            <div id="sptfy-player">
+                <iframe class="sptfy-player" src="https://open.spotify.com/embed/playlist/5SHeawEkHYgw4oMaNlttyO?utm_source=generator" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media;" loading="lazy"></iframe>
+            </div>            
+        </div><br>
 
-        <!------------------ Bulba Jokes ---------------->
-        <div class="jokes-container">
+
+
+
+        <!------------------ Bulba Chat ---------------->
+        <div class="chat-container">
             <img class="bulba-icon" src="../assets/images/bulba_thumbnail.webp" alt="" width="90vw" height="auto">
-            <p class="jokes-text">What do you get when you cross Pikachu with porn? 
-                Pikascrew.
+            <p class="chat-text" id="typed-text"></p>            
         </div>
 
     
          
  
 
-       
+        
 
     </main>
 
     <script src="../assets/js/webpage.js"></script> 
-    <script src="../assets/js/slideshow.js"></script>
-    <script src="../assets/js/feed.js"></script>     
+   
 </body>
 </html>

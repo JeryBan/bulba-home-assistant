@@ -3,77 +3,75 @@ body {
     width: 100%;
     height: 100vh;
     z-index: -1;
+    /* position: fixed; */
     background-attachment: fixed;
   }
 
 
 /*--------------- Menu / Navbar --------------*/
 
-nav ul {
-    margin-left: -5%;
-}
-
-nav ul li:nth-last-of-type(2) {
-    margin-bottom: 160%;
-    border-bottom: 1px solid rgb(161, 158, 158, 0.5);
-    
-}
-
-nav ul li {
-    list-style-type: none;
-    padding-bottom: 1.5rem;
-    
-}
-
 .menu-button {
     cursor: pointer;
   }
   
 .menu-icon {
-    width: 25px;
-    height: 3px;
+    width: 1.5rem;
+    height: 0.2rem;
     background-color: #c0b6b6;
-    margin: 4px 0;
+    margin: 0.3rem 0;
     transition: 0.4s;
 }
 
 .menu {
-    display: none; 
+    display: none;
     background-color: #1f5343;
     transform: translate(0, -50%);
     border-radius: 1rem;
     position: absolute;
     left: 0;
-    height: 55vh;
-    width: 10vw;
+    width: 10%;
+    height: 55%;
     margin-top: 28vh;
     opacity: 90%;
-    
+    overflow: hidden;    
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.menu ul li {
+  list-style-type: none;
+  padding-bottom: 1.5rem;
+}
+
+.menu ul li:nth-last-of-type(2) {
+  margin-bottom: 160%;
+  border-bottom: 1px solid rgb(161, 158, 158, 0.5);  
 }
    
 .menu-text {
     color: rgb(185, 193, 199);
     text-decoration: none;
     font-weight: bold;
-    font-size: large;
-    
+    font-size: large;    
 }
 
 /* ------------------- Slideshow -------------------------*/
 
-.slideshow-container {
-    display: flexbox;
-    position: fixed right;
-    width: 30%;
-     
+.feed-container {
+    /* display: flexbox; */
+    position: right;
+    width: 25%;
+    height: 50%;
+    margin-left: 74%;
+    margin-top: 1vh;
 }
 
 .slides {
     animation: fade 2s linear;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 @keyframes fade {
@@ -83,96 +81,112 @@ nav ul li {
 
 .slide-img {
     border: 3px solid #000;
-    float: right;
-    margin-right: 10px;
-
 }
 
 /* -------------- Feed --------------------- */
 
-.feed-container {
-    width: 25vw;
+.feed {
+    width: 100%;
     height: 50vh;
     background-color: rgb(68, 65, 65, 0.6);
-    margin-left: 74vw;
-    margin-top: 30vh;
     border-style: double;
     overflow: hidden;
 }
 
-.feed-container > ul {
+.feed > ul {
     list-style: none;
     list-style-type: none;
-    animation: scroll 30s linear infinite;}
-.feed-container ul>li {
+    animation: scroll 15s linear infinite;}
+.feed ul>li {
     padding-bottom: 0.7rem; 
     border-bottom: 1px solid #b9b2b2;}
-.feed-container ul li>p , h3{
+.feed ul li>p , h3{
     font-family: 'Montserrat', sans-serif;
     color: antiquewhite;}
 
     @keyframes scroll {
         0% {
-          transform: translateY(-100%);
+          transform: translateY(-70%);
         }
-        10% {
-          transform: translateY((-100%));
+        /* 10% {
+          transform: translateY((300%));
         }
         20% {
-          transform: translateY((-100%));
+          transform: translateY((300%));
         }
         25% {
-          transform: translateY((-100%));
+          transform: translateY((300%));
         }
         40% {
-          transform: translateY((-100%));
+          transform: translateY((300%));
         }
         50% {
-          transform: translateY((-100%));
+          transform: translateY((300%));
         }
         60% {
-          transform: translateY((-100%));
+          transform: translateY((300%));
         }
         70% {
-          transform: translateY((-100%));
+          transform: translateY((300%));
         }
         80% {
-          transform: translateY((-100%));
+          transform: translateY((300%));
         }
         90% {
-          transform: translateY((0));
-        }
-        100% {
-          transform: translateY((0));
-        }
+          transform: translateY((300%));
+        } */
+        /* 100% {
+          transform: translateY((300%));
+        } */
       }
+
+/* ------------- Music Player ------------ */
+
+.music-container {
+  display: relative;
+  width: 10%;
+  overflow: hidden;
+  margin-left: 40%;
+  margin-top: -35%;  
+  
+}
+
+.music-icon {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  opacity: 60%;
+}
+
+.sptfy-player {
+  display: none;
+  
+}
       
       
 
-/* ----------- Bulba Jokes ------------------*/
+/* ----------- Bulba Chat ------------------*/
 
-.jokes-container {
+.chat-container {
     width: 40%;
     height: 10%;
     background-color: rgb(129, 104, 73, 0.9);
-    /* opacity: 90%; */
     margin-left: 2%;
-    /* margin-top: 35%; */
+    margin-top: 22%;
     position: fixed;
-    border-style: ridge;  
-       
+    border-style: ridge;        
     
 }
 
 
-.jokes-text {
+.chat-text {
     font-family: 'Montserrat', sans-serif;
     color: antiquewhite;
     font-weight: 400;
-    padding-left: 10%;
+    padding-left: 4rem;
     max-height: 70%;
-    overflow: hidden;
-    
+    overflow: auto;
+      
 }
 
 .bulba-icon {
@@ -184,9 +198,4 @@ nav ul li {
     margin-left: -5%;
     
 }
-
-
-
-
-
 
